@@ -1,0 +1,127 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/base"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="8dp"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:paddingBottom="8dp"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/info"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Info"
+			android:textSize="16sp"
+			android:textColor="#000000" />
+		<LinearLayout
+			android:id="@+id/container1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+			android:paddingRight="8dp"
+			android:paddingBottom="8dp"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/name"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:text="Name: Awesome flowers"
+				android:textSize="14sp"
+				android:textColor="#616161" />
+			<TextView
+				android:id="@+id/license"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="8dp"
+				android:paddingRight="8dp"
+				android:text="License: VM Wallpapers"
+				android:textSize="14sp"
+				android:textColor="#616161" />
+		</LinearLayout>
+		<TextView
+			android:id="@+id/colors"
+			android:focusable="false"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:padding="8dp"
+			android:text="Dominant color"
+			android:textSize="16sp"
+			android:textColor="#000000" />
+		<LinearLayout
+			android:id="@+id/container2"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/subcontainer1"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<com.google.android.material.button.MaterialButton
+					android:id="@+id/dominantColor"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="MaterialButton"
+					android:textSize="14sp"
+					android:textColor="#FFFFFF"
+					android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+					app:backgroundTint="#ffffff"
+					app:cornerRadius="10dp"
+					style="@style/Widget.MaterialComponents.Button" />
+			</LinearLayout>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/share_txt"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Share"
+			android:textSize="16sp"
+			android:textColor="#000000" />
+		<LinearLayout
+			android:id="@+id/subcontainer2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:paddingBottom="8dp"
+			android:orientation="horizontal">
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/share"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="SHARE"
+				android:textSize="14sp"
+				android:textColor="#FFFFFF"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+				app:backgroundTint="@color/colorPrimary"
+				app:cornerRadius="8dp"
+				style="@style/Widget.MaterialComponents.Button" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

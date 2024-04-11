@@ -1,0 +1,31 @@
+<resources>
+<style name="AppTheme.Toolbar"> 
+<item name="colorControlHighlight">@color/colorControlHighlight</item> 
+</style>
+<style name="BottomNavigationViewTextStyle">
+<item name="android:fontFamily">@font/manrope_medium</item>
+</style>
+	<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorControlHighlight">@color/colorControlHighlight</item>
+		<item name="colorControlNormal">@color/colorControlNormal</item>
+<item name="android:windowContentTransitions">true</item>
+<item name="snackbarStyle">@style/MySnackbar</item> 
+
+</style>
+
+<style name="MySnackbar" parent="Widget.MaterialComponents.Snackbar">
+
+<item name="android:layout_margin">32dp</item>
+
+<item name="actionTextColorAlpha">1</item>
+	</style>
+	<style name="AppTheme.FullScreen" parent="AppTheme">
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+</resources>
